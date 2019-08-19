@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="screen1" id="screen1">
+			<ul class="nav" id="nav">
+				<li class="current"><a href="#screen1">主页</a></li>			
+				<li><a href="#work">作品集</a></li>
+				<li><a href="#about">关于我</a></li>
+			</ul>
+		</div>
+		<div class="screen2">
+			<div class="wrap">	
+				<div id="work">
+				<div class="title">
+					<h2>作品集<span>Portfolios</span></h2>
+				</div>
+				<ul class="post">
+					<li>						
+						<a class="cover" target="_blank" href="web.html">
+							<p class="img"><img src="img/p1.jpg"></p>
+							<p class="tit">CFW · 品牌升级</p>
+						</a>
+					</li>
+					<li>						
+						<a class="cover" target="_blank" href="m.html">
+							<p class="img"><img src="img/p2.jpg"></p>
+							<p class="tit">CFW · M端品牌升级</p>
+						</a>
+					</li>
+					<li>
+						<a class="cover" target="_blank" href="https://news.cfw.cn/">
+							<p class="img"><img src="img/p4.jpg"></p>
+							<p class="tit">CFW · 时尚</p>
+						</a>
+					</li>
+					<li>
+						<a class="cover" target="_blank" href="h5.html">
+							<p class="img"><img src="img/p3.jpg"></p>
+							<p class="tit">H5页面</p>
+						</a>
+					</li>
+					<li>
+						<a class="cover" href="javascript:void(0)">
+							<p class="img"><img src="img/p5.jpg"></p>
+							<p class="tit">CFW · 求职小程序</p>
+						</a>
+					</li>
+					<li>
+						<a class="cover" href="javascript:void(0)">
+							<p class="img"><img src="img/p6.jpg"></p>
+							<p class="tit">CFW · 求职APP</p>
+						</a>
+					</li>
+				</ul>
+				</div>
+				<div id="about">
+				<div class="title">
+					<h2>关于我<span>about me </span></h2>
+				</div>
+				<div class="about">
+					<div class="left">
+						<p style="font-size: 28px; margin-bottom: 20px;">张云</p>
+						<p>4年经验  ·  27岁  ·  本科</p>
+						<p>3年UI设计工作经验，有独立的项目经验，熟练掌握PS、AI、html+css、
+	Axure、墨刀、蓝湖等技能，对iOS、Android、Web以及微信H5设计有丰富经验。</p>
+						<p  style="font-size: 16px; margin-top: 25px;">工作经历</p>
+						<p>金华智联科技有限公司<span>2015-至今</span></p>
+						<p>UI设计</p>
+						<p>主要负责公司网站、APP、小程序等相关产品的界面设计、用户体验分析优化；
+	参与相关项目建立及评审，站在用户角度思考产品方案并提出有效的建议；
+	制定产品的设计规范，协助开发人员完成界面及交互，协助确保项目高质量实现；
+	</p>
+						<p>电话：15382483080</p>
+						<p>邮箱：172854163@qq.com</p>
+					</div>
+					<div class="photo">
+						<img src="img/photo.jpg" />
+					</div>
+				</div>			
+				<p class="idea">不为设计而设计，每一个界面的设计都应该赋予应有的理由</p>
+				</div>
+			</div>
+		</div>
+		<div class="foot">YUNZI</div>
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.nav.js"></script>
+		<script>
+			 $(window).scroll(function() {
+				t = $(document).scrollTop();
+				if(t > 600) {
+					$('.nav').addClass('roll');
+				} else {
+					$('.nav').removeClass('roll');
+				}
+			})
+			
+				
+			$('#nav').onePageNav();
+		
+		</script>
+	</body>
+</html>
